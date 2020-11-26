@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty: DEBUG
+    
+server:
+  port: 8090
+    
+okta:
+  oauth2:
+    issuer: https://dev-4272939.okta.com/oauth2/default
+    client-id: 0oa1cybckq0luwue95d6
+    client-secret: 7-AyUkhIvicxkicHevk3-MK-z3kQmIOOMh48Itod
